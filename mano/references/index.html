@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Préstations - Aide pour Mano</title>
+	<title>Références - Aide pour Mano</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -62,8 +62,8 @@
             
             
             
-                <li class="active">
-                    <a href="./">Préstations</a>
+                <li >
+                    <a href="../prestations/">Préstations</a>
                 </li>
             
             
@@ -80,8 +80,8 @@
             
             
             
-                <li >
-                    <a href="../references/">Références</a>
+                <li class="active">
+                    <a href="./">Références</a>
                 </li>
             
             
@@ -90,12 +90,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../scripts/">
+                    <a rel="next" href="../agenda/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="../photos/">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -109,23 +109,17 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#parametre-dune-prestation">Paramètre d'une préstation</a></li>
+        <li class="main active"><a href="#references">Références</a></li>
         
             <li><a href="#date">Date</a></li>
         
             <li><a href="#title">Title</a></li>
         
-            <li><a href="#description">Description</a></li>
+            <li><a href="#categorie">Categorie</a></li>
         
-            <li><a href="#thumbnail">Thumbnail</a></li>
-        
-            <li><a href="#video">Video</a></li>
-        
-            <li><a href="#images">Images</a></li>
+            <li><a href="#image">Image</a></li>
         
             <li><a href="#weight">Weight</a></li>
-        
-            <li><a href="#le-contenu">le contenu</a></li>
         
             <li><a href="#un-exemple-complet-de-fichier">Un exemple complet de fichier</a></li>
         
@@ -134,12 +128,8 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="parametre-dune-prestation">Paramètre d'une préstation</h1>
-<p>Les différents paramètres d'une prestation sont détaillé ci après.<br />
-TOUS les champs doivent être remplis !</p>
-<p>En cas de doute, prendre en exemple un fichier déjà existant.<br />
-Note: l'importance des doubles guillemets <code>"</code> dans les paramètres et la présence du signe <code>=</code>.<br />
-Note bis: l'importance des <code>+++</code> au début et à la fin des paramètres.</p>
+<h1 id="references">Références</h1>
+<p>Chaque photo d'une référence correspond à un fichier.</p>
 <h3 id="date">Date</h3>
 <p>Idéalement, doit correspondre à la date de création du fichier...<br />
 Doit être du format <code>"AAA-MM-JJ (T) HH:MM:SS (+02:00)"</code>.</p>
@@ -147,38 +137,29 @@ Doit être du format <code>"AAA-MM-JJ (T) HH:MM:SS (+02:00)"</code>.</p>
 <p>Exemple <code>date = "2015-10-13T13:39:32+02:00"</code>.</p>
 </blockquote>
 <h3 id="title">Title</h3>
-<p>Doit correspondre au nom du fichier (sans l'extension). Ce sera le titre de la prestation; il faut donc le mettre en majuscule pour coller au design.</p>
+<p>Doit correspondre au nom du fichier (sans l'extension). Ce sera le titre de la référence.</p>
 <blockquote>
-<p>Exemple <code>title = "JONGLAGE"</code></p>
+<p>Exemple <code>title = "TF1"</code></p>
 </blockquote>
-<h3 id="description">Description</h3>
-<p>Correspond à la description visible sous le titre de la prestation.</p>
-<blockquote>
-<p>Exemple <code>description = "Déambulations créatives originales"</code></p>
-</blockquote>
-<h3 id="thumbnail">Thumbnail</h3>
-<p>Correspond à l'image visible sur la page de toute les préstations
-Comme indiqué dans les généralités, les images sont stockées dans le dossier <code>static/img/</code>.
-Cependant, il ne faut pas indiquer le <code>static</code> dans le chemin.</p>
-<blockquote>
-<p>Exemple <code>thumbnail = "/img/prestations/baniere_1.jpg"</code></p>
-</blockquote>
-<h3 id="video">Video</h3>
-<p>Correspond à l'url de la vidéo youtube.<br />
-ATTENTION ! Pour obtenir l'url de la vidéo il faut suivre la manipulation suivante :</p>
+<h3 id="categorie">Categorie</h3>
+<p>Doit correspondre à la catégorie de la référence :</p>
 <ul>
-<li>Être sur la page de la vidéo</li>
-<li>Cliquer sur <em>Partager</em> (share)</li>
-<li>Cliquer sur <em>Intégrer</em> (embeded)</li>
-<li>Copier/coller le paramètre <code>src</code></li>
+<li>tournage</li>
+<li>evenementiel</li>
+<li>societe</li>
 </ul>
 <blockquote>
-<p>Exemple <code>video = "https://www.youtube.com/embed/GefC4gZNIHo"</code></p>
+<p>Exemple <code>categorie="tournage"</code></p>
 </blockquote>
-<h3 id="images">Images</h3>
-<p>Correspond aux images associées à la prestation. On indique le chemin vers les images comme pour le thumbnail. Notez la présence des <code>[</code> et <code>]</code> au début et à la fin, les <code>"</code> et les <code>,</code>.</p>
+<h3 id="image">Image</h3>
+<p>Doit correspondre chemin vers le fichier image.</p>
+<ul>
+<li>tournage</li>
+<li>evenementiel</li>
+<li>societe</li>
+</ul>
 <blockquote>
-<p>Exemple <code>images = ["img/prestations/jonglage_2.jpg", "img/prestations/UNE_BELLE_EPEE.jpg"]</code></p>
+<p>image = <code>"img/references/bmw.jpg"</code></p>
 </blockquote>
 <h3 id="weight">Weight</h3>
 <p>Correspond à l'ordre dans lequel sera affiché la prestation. La 1 sera en première position, la 2 en seconde etc.<br />
@@ -186,37 +167,15 @@ Astuce: indiquer des dizaines à la place d'unité; il sera plus simple d'interc
 <blockquote>
 <p>Exemple <code>weight = 10</code></p>
 </blockquote>
-<h3 id="le-contenu">le contenu</h3>
-<p>Le contenu est situé après les <code>+++</code> et correspond au texte affiché.
-Quelques règles permettent de mettre en page le texte grâce à la syntax MarkDown.</p>
-<ul>
-<li>Deux retours à la ligne pour sauter une ligne</li>
-<li>Deux espaces pour retourner à la ligne</li>
-<li>des tirets pour faire une liste</li>
-<li>des # pour indiquer un titre</li>
-</ul>
-<p>Pour plus d'information : <a href="https://help.github.com/articles/markdown-basics/">https://help.github.com/articles/markdown-basics/</a><br />
-Et pour information, cette documentation est rédigé en MarkDown ;)</p>
 <h2 id="un-exemple-complet-de-fichier">Un exemple complet de fichier</h2>
 <pre><code>+++
-date = &quot;2015-10-13T13:39:32+02:00&quot;
-title = &quot;JONGLAGE&quot;
-description=&quot;Déambulations créatives originales&quot;
-thumbnail=&quot;/img/prestations/baniere_1.jpg&quot;
-video=&quot;https://www.youtube.com/embed/GefC4gZNIHo&quot;
-images=[&quot;img/prestations/jonglage_2.jpg&quot;, &quot;img/prestations/UNE_BELLE_EPEE.jpg&quot;]
-weight=30
+date = &quot;2015-10-13T13:40:29+02:00&quot;
+title = &quot;TF1&quot;
+categorie=&quot;tournage&quot;
+image = &quot;img/references/bmw.jpg&quot;
+weight= 20
 +++
-
-Jongleur aguerri, je mets mon savoir-faire technique au service du spectacle.
-En route pour des aventures imaginaires pleines de légèretés !
-
-Je peux réaliser plusieurs passages lors d'une même prestation, seul ou avec plusieurs jongleurs. Que vous soyez un festival, une entreprise, ou encore une fête de quartier, je m'adapte à vos besoins pour rendre votre événement inoubliable.
-</code></pre>
-
-<blockquote>
-<p>Je ne sais pas pourquoi certain mots sont en <strong>gras</strong> dans l'exemple ! !</p>
-</blockquote></div>
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
