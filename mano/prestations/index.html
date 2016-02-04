@@ -91,6 +91,12 @@
                 </li>
             
             
+            
+                <li >
+                    <a href="../referencement/">Référencement</a>
+                </li>
+            
+            
             </ul>
 
             <!-- Search, Navigation and Repo links -->
@@ -120,6 +126,8 @@
             <li><a href="#date">Date</a></li>
         
             <li><a href="#title">Title</a></li>
+        
+            <li><a href="#titlepage">Titlepage</a></li>
         
             <li><a href="#description">Description</a></li>
         
@@ -158,6 +166,12 @@ Doit être du format <code>"AAA-MM-JJ (T) HH:MM:SS (+02:00)"</code>.</p>
 <p>Doit correspondre au nom du fichier (sans l'extension). Ce sera le titre de la prestation; il faut donc le mettre en majuscule pour coller au design.</p>
 <blockquote>
 <p>Exemple <code>title = "JONGLAGE"</code></p>
+</blockquote>
+<h3 id="titlepage">Titlepage</h3>
+<p>Permet de redéfinir le titre de la page (apparait dans l'onglet et est utile pour le réferencement).
+Ce champs est optionnel.</p>
+<blockquote>
+<p>Exemple <code>titlepage = "Mon titre de page"</code></p>
 </blockquote>
 <h3 id="description">Description</h3>
 <p>Correspond à la description visible sous le titre de la prestation.</p>
@@ -215,6 +229,7 @@ Et pour information, cette documentation est rédigé en MarkDown ;)</p>
 <pre><code>+++
 date = &quot;2015-10-13T13:39:32+02:00&quot;
 title = &quot;JONGLAGE&quot;
+titlepage = &quot;Mon titre de page&quot;
 description=&quot;Déambulations créatives originales&quot;
 thumbnail=&quot;/img/prestations/baniere_1.jpg&quot;
 video=&quot;https://www.youtube.com/embed/GefC4gZNIHo&quot;

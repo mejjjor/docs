@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Agenda - Aide pour Mano</title>
+	<title>Référencement - Aide pour Mano</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -80,8 +80,8 @@
             
             
             
-                <li class="active">
-                    <a href="./">Agenda</a>
+                <li >
+                    <a href="../agenda/">Agenda</a>
                 </li>
             
             
@@ -92,8 +92,8 @@
             
             
             
-                <li >
-                    <a href="../referencement/">Référencement</a>
+                <li class="active">
+                    <a href="./">Référencement</a>
                 </li>
             
             
@@ -102,12 +102,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../photos/">
+                    <a rel="next" href="../references/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="../references/">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -121,57 +121,18 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#parametres-dun-evenement-dans-lagenda">Paramètres d'un évenement dans l'agenda</a></li>
-        
-            <li><a href="#date">Date</a></li>
-        
-            <li><a href="#title">Title</a></li>
-        
-            <li><a href="#dates-lieu-link">Dates, lieu, link</a></li>
-        
-            <li><a href="#weight">Weight</a></li>
-        
-            <li><a href="#un-exemple-complet-de-fichier">Un exemple complet de fichier</a></li>
+        <li class="main active"><a href="#referencement">référencement</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="parametres-dun-evenement-dans-lagenda">Paramètres d'un évenement dans l'agenda</h1>
-<h3 id="date">Date</h3>
-<p>Idéalement, doit correspondre à la date de création du fichier...<br />
-Doit être du format <code>"AAA-MM-JJ (T) HH:MM:SS (+02:00)"</code>.</p>
-<blockquote>
-<p>Exemple <code>date = "2015-10-13T13:39:32+02:00"</code>.</p>
-</blockquote>
-<h3 id="title">Title</h3>
-<p>Doit correspondre au nom du fichier (sans l'extension). Ce sera le titre de l'évenement.</p>
-<blockquote>
-<p>Exemple <code>title = "Vaslo"</code></p>
-</blockquote>
-<h3 id="dates-lieu-link">Dates, lieu, link</h3>
-<p>Correspond aux dates, au lieu et au lien des billets.<br />
-<strong>Attention</strong>, notez la présence du <strong>s</strong> à date<strong>s</strong>.</p>
-<blockquote>
-<p>Exemple <code>dates = "du 13 janvier au 15 février"</code> </p>
-</blockquote>
-<h3 id="weight">Weight</h3>
-<p>Correspond à l'ordre dans lequel sera affiché l'évenement. La 1 sera en première position, la 2 en seconde etc.<br />
-Astuce: indiquer des dizaines à la place d'unité; il sera plus simple d'intercallé un évenement sans avoir à modifier les autres évenements.</p>
-<blockquote>
-<p>Exemple <code>weight = 10</code></p>
-</blockquote>
-<h2 id="un-exemple-complet-de-fichier">Un exemple complet de fichier</h2>
-<pre><code>+++
-date = &quot;2015-10-13T13:40:49+02:00&quot;
-title = &quot;TRUC&quot;
-dates = &quot;du 13 janvier au 15 février&quot;
-lieu = &quot;PARIS&quot;
-link= &quot;http://www.billetreduc.com/&quot;
-weight=20
-+++
-</code></pre></div>
+<h1 id="referencement">référencement</h1>
+<p>Tu ouvres le fichier <code>site_web/config.toml</code>.</p>
+<p>Le champs <strong>title</strong> correspond au titre du site. C'est aussi ce qui apparait dans l'onglet.<br />
+Le champs <strong>description</strong> correspond à la description plus détaillé du site. Elle doit comporter les mots clefs qui le définissent. ex : "Artiste performer préstation beau gosse en photo"   <br />
+Ne mets pas plus de 10 mots clefs.</p></div>
         </div>
 
         <footer class="col-md-12">

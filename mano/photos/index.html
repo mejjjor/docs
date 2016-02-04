@@ -91,6 +91,12 @@
                 </li>
             
             
+            
+                <li >
+                    <a href="../referencement/">Référencement</a>
+                </li>
+            
+            
             </ul>
 
             <!-- Search, Navigation and Repo links -->
@@ -117,6 +123,8 @@
     
         <li class="main active"><a href="#photos">Photos</a></li>
         
+            <li><a href="#titlepage">Titlepage</a></li>
+        
             <li><a href="#un-exemple-complet-de-fichier">Un exemple complet de fichier</a></li>
         
     
@@ -140,10 +148,17 @@ Un élément correspond au chemin vers le fichier image.</p>
 <p>Exemple d'un tableau avec deux éléments : images=["img/prestations/jonglage_1.jpg"<strong> , </strong>"img/prestations/jonglage_2.jpg"]</p>
 </blockquote>
 <p>L'inconvéniant et de ne pas pouvoir réagencer le fichier pour mieux voir les différents chemin.</p>
+<h3 id="titlepage">Titlepage</h3>
+<p>Permet de redéfinir le titre de la page (apparait dans l'onglet et est utile pour le réferencement).<br />
+Ce champs n'a pas vocation à être modifié.</p>
+<blockquote>
+<p>Exemple <code>titlepage = "photos"</code></p>
+</blockquote>
 <h2 id="un-exemple-complet-de-fichier">Un exemple complet de fichier</h2>
 <pre><code>+++
 date = &quot;2015-10-13T13:40:59+02:00&quot;
 title = &quot;all&quot;
+titlepage = &quot;photos&quot;
 images=[&quot;img/prestations/jonglage_2.jpg&quot;,&quot;img/prestations/UNE_BELLE_EPEE.jpg&quot;,&quot;img/prestations/jonglage_4.jpg&quot;,&quot;img/prestations/jonglage_5.jpg&quot;,&quot;img/prestations/jonglage_5.jpg&quot;,&quot;img/prestations/jonglage_2.jpg&quot;,&quot;img/prestations/UNE_BELLE_EPEE.jpg&quot;,&quot;img/prestations/jonglage_4.jpg&quot;,&quot;img/prestations/jonglage_5.jpg&quot;]
 +++
 </code></pre>
