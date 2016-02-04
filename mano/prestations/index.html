@@ -62,6 +62,12 @@
             
             
             
+                <li >
+                    <a href="../accueil/">Accueil</a>
+                </li>
+            
+            
+            
                 <li class="active">
                     <a href="./">Préstations</a>
                 </li>
@@ -90,7 +96,7 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../scripts/">
+                    <a rel="next" href="../accueil/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -121,6 +127,8 @@
         
             <li><a href="#video">Video</a></li>
         
+            <li><a href="#image">image</a></li>
+        
             <li><a href="#images">Images</a></li>
         
             <li><a href="#weight">Weight</a></li>
@@ -136,7 +144,7 @@
 
 <h1 id="parametre-dune-prestation">Paramètre d'une préstation</h1>
 <p>Les différents paramètres d'une prestation sont détaillé ci après.<br />
-TOUS les champs doivent être remplis !</p>
+Tous les champs doivent être remplis ! (sauf pour video et image)</p>
 <p>En cas de doute, prendre en exemple un fichier déjà existant.<br />
 Note: l'importance des doubles guillemets <code>"</code> dans les paramètres et la présence du signe <code>=</code>.<br />
 Note bis: l'importance des <code>+++</code> au début et à la fin des paramètres.</p>
@@ -175,6 +183,12 @@ ATTENTION ! Pour obtenir l'url de la vidéo il faut suivre la manipulation suiva
 <blockquote>
 <p>Exemple <code>video = "https://www.youtube.com/embed/GefC4gZNIHo"</code></p>
 </blockquote>
+<h3 id="image">image</h3>
+<p>Correspond au chemin de l'image à afficher en grand à la place de la video.<br />
+ATTENTION : Bien noter l'absence de 's' à la fin de image ! C'est pour le différencier de imageS.</p>
+<blockquote>
+<p>Exemple <code>image="img/prestations/BALLON_POISSON.jpg"</code></p>
+</blockquote>
 <h3 id="images">Images</h3>
 <p>Correspond aux images associées à la prestation. On indique le chemin vers les images comme pour le thumbnail. Notez la présence des <code>[</code> et <code>]</code> au début et à la fin, les <code>"</code> et les <code>,</code>.</p>
 <blockquote>
@@ -204,6 +218,7 @@ title = &quot;JONGLAGE&quot;
 description=&quot;Déambulations créatives originales&quot;
 thumbnail=&quot;/img/prestations/baniere_1.jpg&quot;
 video=&quot;https://www.youtube.com/embed/GefC4gZNIHo&quot;
+image=&quot;img/prestations/BALLON_POISSON.jpg&quot;
 images=[&quot;img/prestations/jonglage_2.jpg&quot;, &quot;img/prestations/UNE_BELLE_EPEE.jpg&quot;]
 weight=30
 +++

@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,15 @@
     
     <url>
      <loc>None/scripts/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/accueil/</loc>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +28,7 @@
     
     <url>
      <loc>None/prestations/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
      <loc>None/photos/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +44,7 @@
     
     <url>
      <loc>None/agenda/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +52,7 @@
     
     <url>
      <loc>None/references/</loc>
-     <lastmod>2016-01-05</lastmod>
+     <lastmod>2016-02-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
